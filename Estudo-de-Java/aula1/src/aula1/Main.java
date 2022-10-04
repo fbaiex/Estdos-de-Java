@@ -16,19 +16,16 @@ public class Main {
 		float a = 2;
 		float b = 3;
 		
-		float horas = horaExt - ( a / b * (hFalta));
+		float resultado = horaExt - ( a / b * (hFalta));
 		
-		System.out.println(horas);
-		System.out.println(hFalta);
-		
-		if (horas >= 2401)
+		if (resultado >= 2401)
 		{
 			System.out.println("Você fez e vai receber: 500,00");
-		} else if(horas >= 1801) {
+		} else if(resultado >= 1801) {
 			System.out.println("Receba o prêmio de R$: 400,00");
-		}else if (horas >= 1201){
+		}else if (resultado >= 1201){
 			System.out.println("Receba o prêmio de R$: 300,00");
-		}else if (horas >= 600) {
+		}else if (resultado >= 600) {
 			System.out.println("Receba o prêmio de R$: 200,00");
 		}else {
 			System.out.println("Receba o prêmio de R$: 100,00");
