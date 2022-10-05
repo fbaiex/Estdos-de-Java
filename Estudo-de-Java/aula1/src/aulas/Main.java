@@ -9,14 +9,14 @@ public class Main {
 		Scanner entrada = new Scanner(System.in);
 		
 		System.out.println("Digite o número de horas Extras: ");
-		float horaExt = entrada.nextFloat();
+		double horaExt = entrada.nextDouble();
 		System.out.println("Digite o número de horas em que faltou: ");
-		float hFalta = entrada.nextFloat();
+		double hFalta = entrada.nextDouble();
 		
-		float a = 2;
-		float b = 3;
+		double resultado = (horaExt - (2/3 * (hFalta)))*60;
 		
-		float resultado = horaExt - ( a / b * (hFalta));
+		System.out.println(resultado);
+		System.out.println(hFalta);
 		
 		if (resultado >= 2401)
 		{
